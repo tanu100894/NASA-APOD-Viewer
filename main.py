@@ -16,7 +16,7 @@ content = request.json() # Parse JSON response
 
 # Set Streamlit page layout and display data
 st.set_page_config("wide")          # Use wide layout
-st.header(content["title"])         # Display image title
+st.title(content["title"])         # Display image title
 st.image(content["hdurl"])          # Display high-definition image
 st.text(content["explanation"])     # Show the image explanation
 
